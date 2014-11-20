@@ -8,11 +8,14 @@ module BlogDataSource (
     -- * User API
     PostId(..), Date(..), PostContent, PostInfo(..),
     getPostIds, getPostInfo, getPostContent, getPostViews,
+
+    -- * Data source API
+    initDataSource,
   ) where
 
 
 import BlogDataSource.Types
-import BlogDataSource.Internals2 ()
+import BlogDataSource.Internals
 
 import Haxl.Core
 
